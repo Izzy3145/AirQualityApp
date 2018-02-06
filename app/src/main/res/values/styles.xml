@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--main activity title bar style -->
+        <style name="main_title_style" parent="TextAppearance.AppCompat.Headline">
+            <item name="android:gravity">center</item>
+        </style>
+
 </resources>

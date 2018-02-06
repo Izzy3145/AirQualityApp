@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- info window colors -->
+    <color name="iw_background">#FFF0F5</color>
+    <color name="iw_place_text">#000</color>
+    <color name="iw_measurement_text">#2F4F4F</color>
+
 </resources>

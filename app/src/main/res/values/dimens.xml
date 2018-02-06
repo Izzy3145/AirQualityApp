@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="info_window_padding">2dp</dimen>
+
+    <!-- text sizes -->
+    <dimen name="text_heading">20sp</dimen>
+    <dimen name="text_subheading">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_button">14sp</dimen>
+
+
+</resources>

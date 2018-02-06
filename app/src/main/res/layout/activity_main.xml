@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.airqualityapp.MainActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/main_title"
+        style="@style/main_title_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pm25"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/pm25"
+        style="@style/main_title_style"
+        android:onClick="onClickPM25"
+        app:layout_constraintBottom_toTopOf="@+id/tv_so2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <TextView
+        android:id="@+id/tv_pm10"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/pm10"
+        style="@style/main_title_style"
+        android:onClick="onClickPM10"
+        app:layout_constraintBottom_toTopOf="@+id/tv_no2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toEndOf="@+id/tv_pm25"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <TextView
+        android:id="@+id/tv_so2"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/so2"
+        style="@style/main_title_style"
+        android:onClick="onClickSO2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_o3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_no2"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/no2"
+        style="@style/main_title_style"
+        android:onClick="onClickNO2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_co"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toEndOf="@+id/tv_so2" />
+
+    <TextView
+        android:id="@+id/tv_o3"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/o3"
+        style="@style/main_title_style"
+        android:onClick="onClickO3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_co"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/background_pollutants"
+        android:text="@string/co"
+        style="@style/main_title_style"
+        android:onClick="onClickCO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toEndOf="@+id/tv_o3" />
+
+</android.support.constraint.ConstraintLayout>
